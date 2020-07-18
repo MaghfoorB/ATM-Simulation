@@ -1,0 +1,2 @@
+# ATM Simulation
+An ATM machine mockup with a web interface in ASP.NET web forms and database management in MS SQL server. The project makes use of Stored Procedures, Triggers and Views along with common CRUD operations in SQL. This was a group project in Database Systems Lab. I was responsible for handling the database and the Data Access Layer of the application.

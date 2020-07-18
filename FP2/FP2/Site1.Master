@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="FP2.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>ATM Home</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link rel="stylesheet" href="css/StyleSheet1.css" type="text/css" charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      
+
+</head>
+
+<body>
+    <ul>
+        <li><a class="active" href="SignIn.aspx">Home</a></li>
+        <li><a href="About.aspx">About</a></li>
+        <li style="float: right"><a href="LogOut.aspx">Log out</a></li>
+    </ul>
+
+
+    <div class="first">
+        <div class="row">
+            <div class="col-sm-12">
+                <p id="p1" style="font-size: 80px">HBL ATM</p>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div style="position: fixed; bottom: 0; width: 100%;">
+            <asp:Button ID="Button7" runat="server" OnClick="home_button" CssClass="button button2 center-block" Text="Go Back To Home Page" Font-Size="Small" Width="205px" />
+        </div>
+
+    </form>
+
+
+</body>
+</html>
